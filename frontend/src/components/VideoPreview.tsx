@@ -59,7 +59,7 @@ const VideoPreview: React.FC<VideoPreviewProps> = ({ videoId }) => {
   if (error) return <p className="text-red-500">Error: {error}</p>;
 
   return (
-    <div className="mt-6 flex flex-col items-center text-center">
+    <div className="mt-6 flex border rounded-lg p-3 border-gray-600 flex-col items-center text-center">
       <h2 className="text-lg font-semibold mb-2">{videoDetails?.title}</h2>
       <img
         src={videoDetails?.thumbnail}
